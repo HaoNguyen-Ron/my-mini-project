@@ -19,15 +19,12 @@ import ProductListPage from 'pages/product';
 import TodoPage from 'pages/todo';
 
 import './App.css';
+import Logout from 'Components/Logout';
 
 function App() { // = Home Page
   const navigate = useNavigate();
 
   const token = window.localStorage.getItem(DEFAULT.TOKEN);
-
-  const handleLogout = () => {
-    window.localStorage.clear(token)
-  }
 
   useEffect(() => {
     if (token) {
@@ -61,10 +58,10 @@ function App() { // = Home Page
               <Route path={LOCATION.FORM} element={<Form />} />
               <Route path={LOCATION.REGISTER} element={<RegisterPage />} />
               <Route path={LOCATION.TODO} element={<TodoPage />} />
+              <Route path={LOCATION.LOGOUT} element={<Logout />} />
             </Route>
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-        <button onClick={handleLogout}>Log out</button>
           </>
         )
       }

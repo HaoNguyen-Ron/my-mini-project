@@ -17,6 +17,7 @@ export const LOCATION = {
   FORM: "/form",
   DEMO: "/demo",
   TODO:"/todo",
+  LOGOUT:"/logout"
 };
 
 export const NON_AUTH = [
@@ -66,5 +67,9 @@ export const AUTH = [
   {
     path: LOCATION.TODO,
     title: "Todo App",
+  },
+  {
+    path: LOCATION.LOGOUT,
+    title: "Log out",
   },
 ]
