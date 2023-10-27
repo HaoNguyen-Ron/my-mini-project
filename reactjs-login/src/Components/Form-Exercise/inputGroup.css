@@ -1,0 +1,68 @@
+/* input part */
+.submitbtn{
+    background-color: var(--main-font-color);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.loginBtn{
+    background-color: var(--main-font-color);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+.input-warp{
+    width: 100%;
+    border: 1px solid #333645;
+    background-color: #333645;
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+.form-label{
+    min-width: 150px;
+    display: block;
+    font-size: 12px;
+    color: #919bac;
+
+}
+
+input {
+    border:0;outline:0;
+    background-color: #333645;
+    color: white;
+}
+input:focus {
+    outline:none!important;
+}
+.input-field{
+    width: 90%;
+}
+
+/* display invalid */
+.d-error{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+    font-weight: 600;
+}
+input:invalid[focused='true'] ~ .d-error{
+    display: block;
+}
+/* input:invalid {
+    border-color: red;
+}
+  
+
+input:valid {
+    border-color: green;
+} */

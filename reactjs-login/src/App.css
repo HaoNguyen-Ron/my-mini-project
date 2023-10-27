@@ -1,0 +1,68 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #e9e4e4 !important;
+}
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+ul, ol{
+  list-style-type: none;
+  text-decoration: none;
+}
+p{
+  margin-bottom: 0 !important;
+}
+.bg-red{
+  background-color: #F75354;
+}
+.bg-green{
+  background-color: #51D567;
+}
+.bg-light-blue{
+  background-color: #31C8DD;
+}
+.bg-dark-blue{
+  background-color: #619CEC;
+}
+.bg-orange{
+  background-color: #F78153;
+}
+.bg-yellow{
+  background-color: #FCD518;
+}
+.bg-purple{
+  background-color: #CB79E7;
+}
+.bg-pink{
+  background-color: #FE60E8 ;
+}
+.heart-liked{
+  color: #F75354 !important;
+  animation: heartbeat 0.3s linear ;
+}
+@keyframes heartbeat {
+  0%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(1.4);
+  }
+  100%{
+      transform: scale(1);
+  }
+  
+}
+
+.mp3-display {
+  justify-content: space-between;
+}
