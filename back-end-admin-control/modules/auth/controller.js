@@ -55,7 +55,7 @@ module.exports = {
           const Employee = await Employee.findOne({
             _id: id,
             isDeleted: false,
-          }).select('-password').lean(); // vì có refresh token tức đã login không cần check isValidPass
+          }).select('-password').lean();
 
           if (Employee) {
             const {
@@ -98,11 +98,11 @@ module.exports = {
     try {
       const user = await Employee.findById(req.user._id).select('-password').lean();
       const token = generateToken(user);
-      // const refreshToken = generateRefreshToken(user._id);
+      const refreshToken = generateRefreshToken(user._id);
 
       res.json({
         token,
-        // refreshToken,
+        refreshToken,
       });
     } catch (err) {
       console.log('««««« err »»»»»', err);
